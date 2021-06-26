@@ -1,0 +1,5 @@
+(executable
+ (public_name modern-reason)
+ (public_name modern-reason)
+ (name main)
+ (libraries modern-reason))
