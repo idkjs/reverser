@@ -1,2 +1,2 @@
 (library
- (name modern-reason))
+ (name reverser))

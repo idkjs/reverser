@@ -1,17 +1,17 @@
 opam-version: "2.0"
-maintainer: "Louis Roché <louis@louisroche.net>"
-authors: "Louis Roché <louis@louisroche.net>"
-homepage: "https://github.com/Khady/modern-reason"
-bug-reports: "https://github.com/Khady/modern-reason/issues"
+maintainer: "Alain Armand <aarmand.inbox@gmail.com>"
+authors: "Alain Armand <aarmand.inbox@gmail.com>"
+homepage: "https://github.com/idkjs/reverser"
+bug-reports: "https://github.com/idkjs/reverser/issues"
 license: "AGPL-3.0-or-later"
-dev-repo: "git+https://github.com/Khady/modern-reason.git"
-doc: "https://khady.github.io/modern-reason/"
+dev-repo: "git+https://github.com/idkjs/reverser.git"
+doc: "https://idkjs.github.io/reverser/"
 tags: ["git" "diff"]
 depends: [
   "ocaml"
   "dune" {>= "2.5"}
-  "ocamlformat" {= "0.15.0" & dev}
   "ocaml-lsp-server" {dev}
+  "reason"
 ]
 pin-depends: [
   [ "ocaml-lsp-server.dev"
@@ -23,9 +23,9 @@ build: [
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
   ["dune" "build" "-p" name "-j" jobs] {with-doc}
 ]
-name: "modern-reason"
-synopsis: "Template for a modern ocaml project"
-description: "Complete configuration of an ocaml project
+name: "reverser"
+synopsis: "Template for a modern reason or ocaml project"
+description: "Complete configuration of a reason or ocaml project
 - package manager
 - CI
 - build system

@@ -27,13 +27,13 @@ jobs:
         with:
           ocaml-version: ${{ matrix.ocaml-version }}
 
-      - run: opam pin add modern-reason.dev . --no-action
+      - run: opam pin add reverser.dev . --no-action
 
       - name: opam depext
         run: |
-          opam depext modern-reason --yes
-          opam depext modern-reason --yes --with-doc
-          opam depext modern-reason --yes --with-test
+          opam depext reverser --yes
+          opam depext reverser --yes --with-doc
+          opam depext reverser --yes --with-test
 
       - run: opam install . --deps-only --with-doc --with-test
 

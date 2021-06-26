@@ -1,5 +1,4 @@
 (executable
- (public_name modern-reason)
- (public_name modern-reason)
+ (public_name reverser)
  (name main)
- (libraries modern-reason))
+ (libraries reverser))
